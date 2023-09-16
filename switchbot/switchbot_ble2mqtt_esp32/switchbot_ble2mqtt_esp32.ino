@@ -450,7 +450,9 @@ static std::map<std::string, std::string> allBotTypes = {     // OPTIONAL - (DEF
               { "switchbottwo", 1}*/
           };
 /********************************************/
-
+ser = serial(8, -1, 19200, serial.SERIAL_8N1)
+msg = ser.read()   
+print(msg.asstring())   
 
 /********** ADVANCED SETTINGS - ONLY NEED TO CHANGE IF YOU WANT TO TWEAK SETTINGS **********/
 
